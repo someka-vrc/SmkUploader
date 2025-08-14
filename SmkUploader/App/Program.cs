@@ -202,15 +202,24 @@ public class Program
         Console.WriteLine("  - クリップボードに登録された パス/URL のテキスト");
         Console.WriteLine("  - コマンドライン引数での パス/URL の指定");
         Console.WriteLine("");
-        Console.WriteLine("Shiftキーを押しながら起動すると設定画面が開きます。");
-        Console.WriteLine("");
         Console.WriteLine("詳細はドキュメントサイトを参照してください。");
         Console.WriteLine("https://docs.google.com/document/d/1Lng8lue28fDLf1T5D6NUervUHl-wxoci__3t3xWaQc4");
         Console.WriteLine("");
-        Console.WriteLine("コマンド書式: SmkUploader.exe [options] [image_path|url]");
+        Console.WriteLine("Shiftキーを押しながら起動すると設定画面が開きます。");
         Console.WriteLine("");
-        Console.WriteLine("オプション:");
+        Console.WriteLine("<コマンド書式>");
+        Console.WriteLine("書式: SmkUploader.exe [OPTIONS] [IMAGE_PATH|IMAGE_URL]");
+        Console.WriteLine("");
+        Console.WriteLine("OPTIONS:");
         Console.WriteLine("  --help,-h    このヘルプメッセージを表示");
         Console.WriteLine("  --version,-v バージョン情報を表示");
+        Console.WriteLine("  --KEY=VALUE  設定ファイル及び環境変数の内容をオーバーライドします。");
+        Console.WriteLine("KEY:           設定項目のキー。 \"SMKU_\" で始まります。");
+        Console.WriteLine("VALUE:         設定項目の値。");
+        Console.WriteLine("IMAGE_PATH:   アップロードする画像のパス。");
+        Console.WriteLine("IMAGE_URL:    アップロードする画像のURL。");
+        Console.WriteLine("");
+        Console.WriteLine("<環境変数について>");
+        Console.WriteLine("設定キーと同じ名前の環境変数で設定ファイルの内容をオーバーライドできます。");
     }
 }
