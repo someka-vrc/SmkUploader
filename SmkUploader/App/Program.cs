@@ -216,8 +216,8 @@ public class Program
         Console.WriteLine("  --KEY=VALUE  設定ファイル及び環境変数の内容をオーバーライドします。");
         Console.WriteLine("KEY:           設定項目のキー。 \"SMKU_\" で始まります。");
         Console.WriteLine("VALUE:         設定項目の値。");
-        Console.WriteLine("IMAGE_PATH:   アップロードする画像のパス。");
-        Console.WriteLine("IMAGE_URL:    アップロードする画像のURL。");
+        Console.WriteLine("IMAGE_PATH:    アップロードする画像のパス。");
+        Console.WriteLine("IMAGE_URL:     アップロードする画像のURL。");
         Console.WriteLine("");
         Console.WriteLine("<環境変数について>");
         Console.WriteLine("設定キーと同じ名前の環境変数で設定ファイルの内容をオーバーライドできます。");
