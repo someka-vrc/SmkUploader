@@ -29,7 +29,7 @@ public static class LoggerInitializer
     {
         // ログ出力先ディレクトリ決定
         string logsDir = isDev
-            ? Path.Combine(Directory.GetCurrentDirectory(), "SmkUploader", "Logs")
+            ? Path.Combine(Directory.GetCurrentDirectory(), "Logs")
             : Path.Combine(AppContext.BaseDirectory, "Logs");
 
         // Serilog構成
