@@ -1,0 +1,44 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "dotnet",
+			"task": "build",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "dotnet: build"
+		},
+		{
+			"label": "Run SmkUploader",
+			"type": "shell",
+			"command": "dotnet run --project ./SmkUploader/SmkUploader.csproj",
+			"problemMatcher": [],
+			"group": "test",
+			"options": {
+				"env": {
+					"SMKU_ENV": "DEV"
+				}
+			}
+		},
+		{
+			"label": "Publish SmkUploader",
+			"type": "shell",
+			"command": "dotnet publish ./SmkUploader/SmkUploader.csproj -c Release",
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Run SmkUploaderSetting",
+			"type": "shell",
+			"command": "dotnet run --project ./SmkUploaderSetting/SmkUploaderSetting.csproj",
+			"group": "test"
+		},
+		{
+			"label": "Publish SmkUploaderSetting",
+			"type": "shell",
+			"command": "dotnet publish ./SmkUploaderSetting/SmkUploaderSetting.csproj -c Release",
+			"problemMatcher": [],
+			"group": "build"
+		},
+	]
+}
